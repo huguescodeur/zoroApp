@@ -1,0 +1,30 @@
+.header nav {
+  justify-content: center;
+}
+.mini-main button a{
+  color: white;
+}
+
+.article a:first-child .item{
+  background-color: #AFABAB;
+}
+
+.enregistrer tbody > tr:last-child {
+  color: #a8d050;
+}
+
+.mini-main .div-add {
+  height: 35px;
+  width: 450px;
+  border: 2px solid #49769F;
+  border-radius: 8px;
+  background-color: #e2f0d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 67px;
+  left: 114px;
+}

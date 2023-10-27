@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!-- ? Link Acceuil -->
+  <link rel="stylesheet" href="{{url_for('static', filename='acceuil.css')}}" />
+
+  <!-- ? Link Magasin -->
+  <link rel="stylesheet" href="{{url_for('static', filename='magasin.css')}}" />
+
+  <!-- ? Link Ajouter -->
+  <link rel="stylesheet" href="{{url_for('static', filename='ajouter.css')}}" />
+
+  <!-- ? Link Enregistrer -->
+  <link rel="stylesheet" href="{{url_for('static', filename='enregistrer.css')}}" />
+  
+  <!-- ? Link Traitement -->
+  <link rel="stylesheet" href="{{url_for('static', filename='traitement.css')}}" />
+
+  <!-- ? Link Suppression -->
+  <link rel="stylesheet" href="{{url_for('static', filename='suppression.css')}}" />
+</head>
+
+<body>
+  <div class="center">
+    {% include './partials/navbar.html' %}
+
+    <div class="main-main">
+      <!-- ? Sidebar -->
+      {% include './partials/sidebar.html' %}
+      <!-- ? Mini-main -->
+      <div class="mini-main">{% block content %} {% endblock %}</div>
+    </div>
+  </div>
+  <!-- <div class="main-center"></div> -->
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+{% extends './base.html' %}
+<link rel="stylesheet" href="{{url_for('static', filename='traitement.css')}}">
+
+
+{% block content %}
+<a class="mag-btn" href="{{url_for('ajouter')}}"><button type="button">Ajouter</button></a>
+
+<div class="div-add">
+    <p>Le magasin numéro 5 a été modifié avec succès</p>
+</div>
+
+<!-- * Table -->
+<div class="mytable enregistrer">
+    <table border="2" width="100%">
+        <!-- * Legend -->
+        <!-- <caption>
+                Liste des Magasin
+              </caption> -->
+
+        <!-- * En-Tête -->
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Adresse</th>
+                <th>Téléphone</th>
+                <th>Mail</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <!-- * Corps du tableau -->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Magasin1</td>
+                <td>Adresse1</td>
+                <td>Téléphone1</td>
+                <td>E-mail1</td>
+                <td>
+                    <div>
+                        <button class="table-btn" type="button">
+                            <a href="{{url_for('modifier')}}">modifier</a>
+                        </button>
+
+                        <button class="table-btn" type="button">
+                            <a href="{{url_for('suppression')}}">supprimer</a>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Magasin2</td>
+                <td>Adresse2</td>
+                <td>Téléphone2</td>
+                <td>E-mail2</td>
+                <td>
+                    <div>
+                        <button class="table-btn" type="button">
+                            <a href="{{url_for('modifier')}}">modifier</a>
+                        </button>
+
+                        <button class="table-btn" type="button">
+                            <a href="{{url_for('suppression')}}">supprimer</a>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Magasin3</td>
+                <td>Adresse3</td>
+                <td>Téléphone3</td>
+                <td>E-mail3</td>
+                <td>
+                    <div>
+                        <button class="table-btn" type="button">
+                            <a href="{{url_for('modifier')}}">modifier</a>
+                        </button>
+
+                        <button class="table-btn" type="button">
+                            <a href="{{url_for('suppression')}}">supprimer</a>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Magasin4</td>
+                <td>Adresse4</td>
+                <td>Téléphone4</td>
+                <td>E-mail4</td>
+                <td>
+                    <div>
+                        <button class="table-btn" type="button">
+                            <a href="{{url_for('modifier')}}">modifier</a>
+                        </button>
+
+                        <button class="table-btn" type="button">
+                            <a href="{{url_for('suppression')}}">supprimer</a>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Magasin5</td>
+                <td>Adresse5</td>
+                <td>Téléphone5</td>
+                <td>E-mail5</td>
+                <td>
+                    <div>
+                        <button class="table-btn" type="button">
+                            <a href="{{url_for('modifier')}}">modifier</a>
+                        </button>
+
+                        <button class="table-btn" type="button">
+                            <a href="{{url_for('suppression')}}">supprimer</a>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Magasin6</td>
+                <td>Adresse6</td>
+                <td>Téléphone6</td>
+                <td>E-mail6</td>
+                <td>
+                    <div>
+                        <button class="table-btn" type="button">
+                            <a href="{{url_for('modifier')}}">modifier</a>
+                        </button>
+
+                        <button class="table-btn" type="button">
+                            <a href="{{url_for('suppression')}}">supprimer</a>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Magasin7</td>
+                <td>Adresse7</td>
+                <td>Téléphone7</td>
+                <td>E-mail7</td>
+                <td>
+                    <div>
+                        <button class="table-btn" type="button">
+                            <a href="{{url_for('modifier')}}">modifier</a>
+                        </button>
+
+                        <button class="table-btn" type="button">
+                            <a href="{{url_for('suppression')}}">supprimer</a>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr class="last">
+                <td>8</td>
+                <td>Nouveau</td>
+                <td>Nouveau</td>
+                <td>Nouveau</td>
+                <td>Nouveau</td>
+                <td>
+                    <div>
+                        <button class="table-btn" type="button">
+                            <a href="{{url_for('modifier')}}">modifier</a>
+                        </button>
+
+                        <button class="table-btn" type="button">
+                            <a href="{{url_for('suppression')}}">supprimer</a>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}

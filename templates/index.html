@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexion</title>
+
+    <!-- ? LINK CSS -->
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+  </head>
+  <body>
+    <!-- ? Hearder -->
+    {% include './partials/navbar.html' %}
+    <!-- <section class="header">
+      <header>
+        <nav>
+          <p>zoro</p>
+        </nav>
+      </header>
+    </section> -->
+
+    <!-- ? Inscription -->
+    <section class="incription">
+      <div class="section-insc">
+        <div class="form">
+          <h2>Connectez-vous</h2>
+          <form action="{{url_for('acceuil')}}">
+            <input type="text" name="identifiant" placeholder="Identifiant" />
+            <input type="password" name="password" placeholder="Mot de passe" />
+            <button type="submit">Connexion</button>
+            <!-- <button type="submit">Connexion</button> -->
+            <!-- ./templates/acceuil.html -->
+            <!-- <a  href="{{url_for('acceuil')}}"
+              ><button type="submit" >Connexion</button></a
+            > -->
+          </form>
+          <a href="#">Si pas de compte inscrivez-vous</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

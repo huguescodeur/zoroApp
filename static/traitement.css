@@ -1,0 +1,7 @@
+.enregistrer tbody > tr.last {
+  color: #000;
+}
+
+.enregistrer tbody > tr:nth-child(5) {
+  color: #a8d050;
+}
